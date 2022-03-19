@@ -17,9 +17,9 @@ docker build -t luminoleon/epicgames-claimer .
 
 十分简单易用，使用过程中几乎不需要输入或修改任何参数。
 
-## 开始
+# 开始
 
-### Docker
+## Docker
 
 * 基于Ubuntu
     
@@ -29,7 +29,7 @@ docker build -t luminoleon/epicgames-claimer .
 
 使用方法见[README_DOCKER.md](docs/README_DOCKER.md)。
 
-### Docker-compose
+## Docker-compose
 首先创建`docker-compose.yml`文件，内容如下:
 
 ```yaml
@@ -63,15 +63,12 @@ services:
 docker-compose up -d
 ```
     
-### Python
+## Python
 
-#### 如何使用
+### 如何使用
 
 详见[python配置方法](docs/README_PYTHON.md)
 
-## 部署
-
-**注意：由于Epic游戏商城限制了单个IP地址领取免费游戏的总量，所以使用公共IP领取游戏可能会失败。**
 
 ### 腾讯云函数
 
@@ -120,3 +117,5 @@ Windows系统中途结束脚本可能导致浏览器进程留在后台。请检�
 
 ## crontab表达式
 [crontab表达式验证](https://www.matools.com/crontab)
+
+**注意：由于Epic游戏商城限制了单个IP地址领取免费游戏的总量，所以使用公共IP领取游戏可能会失败。**
