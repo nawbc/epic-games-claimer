@@ -27,7 +27,7 @@ docker build -t luminoleon/epicgames-claimer .
     docker run -it chyuz/epic-claimer
     ```
 
-使用方法见[README_DOCKER.md](docs/README_DOCKER.md)或[Docker hub页面](https://hub.docker.com/r/chyuz/epic-claimer)。
+使用方法见[README_DOCKER.md](docs/README_DOCKER.md)。
 
 ### Docker-compose
 首先创建`docker-compose.yml`文件，内容如下:
@@ -64,8 +64,6 @@ docker-compose up -d
 ```
     
 ### Python
-
-要求Python >= 3.6。
 
 #### 如何使用
 
