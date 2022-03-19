@@ -30,7 +30,6 @@ docker build -t luminoleon/epicgames-claimer .
 使用方法见[README_DOCKER.md](docs/README_DOCKER.md)或[Docker hub页面](https://hub.docker.com/r/chyuz/epic-claimer)。
 
 ### Docker-compose
-    ``` bash
     version: '3'
     services:
         epic-a:
@@ -46,11 +45,11 @@ docker build -t luminoleon/epicgames-claimer .
 	    - RUN_AT=11:25
 	    - PUSH_WHEN_OWNED_ALL=false
 	    - NO_STARTUP_NOTIFICATION=ture
-    ```
     
-    ``` bash
-    docker-compose up -d
-    ```
+
+
+`docker-compose up -d`
+
     
 ### Python
 
