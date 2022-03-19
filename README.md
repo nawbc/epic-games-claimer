@@ -36,23 +36,31 @@ docker build -t luminoleon/epicgames-claimer .
 version: '3'
 services:
     epic-a:
-        image: luminoleon/epicgames-claimer
+        image: chyuz/epic-claimer
         container_name: epic-a
         restart: unless-stopped
         environment:
         - TZ=Asia/Shanghai
         - AUTO_UPDATE=true
-        - EMAIL=邮箱
-        - PASSWORD=密码
+        - EMAIL=email@email.com
+        - PASSWORD=password
+        - PUSH_WECHAT_QYWX_AM=corpid,corpsecret,userid,appid
+        - RUN_AT=11:25
+        - PUSH_WHEN_OWNED_ALL=false
+        - NO_STARTUP_NOTIFICATION=ture
     epic-b:
-        image: luminoleon/epicgames-claimer
+        image: chyuz/epic-claimer
         container_name: epic-b
         restart: unless-stopped
         environment:
         - TZ=Asia/Shanghai
         - AUTO_UPDATE=true
-        - EMAIL=另一个邮箱
-        - PASSWORD=另一个密码
+        - EMAIL=another_email@email.com
+        - PASSWORD=another_password
+        - PUSH_WECHAT_QYWX_AM=corpid,corpsecret,userid,appid
+        - RUN_AT=11:30
+        - PUSH_WHEN_OWNED_ALL=false
+        - NO_STARTUP_NOTIFICATION=ture
 ```
 
 然后执行命令:
