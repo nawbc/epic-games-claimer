@@ -30,28 +30,38 @@ docker build -t luminoleon/epicgames-claimer .
 使用方法见[README_DOCKER.md](docs/README_DOCKER.md)或[Docker hub页面](https://hub.docker.com/r/chyuz/epic-claimer)。
 
 ### Docker-compose
-`docker-compose.yml`文件内容
+首先创建`docker-compose.yml`文件，内容如下:
 
-    version: '3'
-    services:
-        epic-a:
-	    image: chyuz/epic-claimer
-	    container_name: epic-xiaochengzi
-	    restart: unless-stopped
-	    environment:
-	    - TZ=Asia/Shanghai
-	    - AUTO_UPDATE=true
-	    - EMAIL=epic邮箱
-	    - PASSWORD=epic密码
-	    - PUSH_WECHAT_QYWX_AM=corpid,corpsecret,userid,appid
-	    - RUN_AT=11:25
-	    - PUSH_WHEN_OWNED_ALL=false
-	    - NO_STARTUP_NOTIFICATION=ture
-    
+```yaml
+version: '3'
 
+services:
 
-`docker-compose up -d`
+    epic-a:
+        image: luminoleon/epicgames-claimer
+        container_name: epic-a
+        restart: unless-stopped
+        environment:
+        - TZ=Asia/Shanghai
+        - AUTO_UPDATE=true
+        - EMAIL=邮箱
+        - PASSWORD=密码
+    epic-b:
+        image: luminoleon/epicgames-claimer
+        container_name: epic-b
+        restart: unless-stopped
+        environment:
+        - TZ=Asia/Shanghai
+        - AUTO_UPDATE=true
+        - EMAIL=另一个邮箱
+        - PASSWORD=另一个密码
+```
 
+然后执行命令:
+
+```bash
+docker-compose up -d
+```
     
 ### Python
 
