@@ -30,7 +30,7 @@ docker build -t luminoleon/epicgames-claimer .
 使用方法见[README_DOCKER.md](docs/README_DOCKER.md)或[Docker hub页面](https://hub.docker.com/r/chyuz/epic-claimer)。
 
 ### Docker-compose
-`docker-compose.yml:`
+`docker-compose.yml`文件内容
 
     version: '3'
     services:
