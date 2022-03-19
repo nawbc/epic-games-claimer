@@ -19,31 +19,15 @@ docker build -t luminoleon/epicgames-claimer .
 
 ## 开始
 
-### Windows
-
-[下载](https://github.com/luminoleon/epicgames-claimer/releases)
-
-Windows版本目前不支持自动更新。
-
-#### Windows版本可选参数
-
-见[Python版本可选参数](#python版本可选参数)
-
 ### Docker
 
 * 基于Ubuntu
     
     ``` bash
-    docker run -it luminoleon/epicgames-claimer
+    docker run -it chyuz/epic-claimer
     ```
 
-* 基于Alpine Linux
-
-    ``` bash
-    docker run -it luminoleon/epicgames-claimer:latest-alpine
-    ```
-
-使用方法见[README_DOCKER.md](docs/README_DOCKER.md)或[Docker hub页面](https://hub.docker.com/r/luminoleon/epicgames-claimer)。
+使用方法见[README_DOCKER.md](docs/README_DOCKER.md)或[Docker hub页面](https://hub.docker.com/r/chyuz/epic-claimer)。
 
 ### Python
 
@@ -51,11 +35,11 @@ Windows版本目前不支持自动更新。
 
 #### 如何使用
 
-1. 克隆/[下载](https://github.com/luminoleon/epicgames-claimer/releases)
+1. 克隆
 
     ``` bash
-    git clone -b main https://github.com/luminoleon/epicgames-claimer.git
-    cd epicgames-claimer
+    git clone -b main https://github.com/cyz0105/epic-games-claimer.git
+    cd epic-games-claimer
     ```
 
 2. 安装Python模块
